@@ -1,0 +1,16 @@
+<form >
+    <label for="name">Please enter your name below</label>
+<input type="text" id="name" name="name">
+
+<div *ngFor= "let question of questions ">
+    <p> {{ question.question_name }}</p>
+<input type="radio" id = "choice1" name = "choice1">
+<label for="choice1">{{ question.choice_1 }}</label>
+<input type="radio" id = "choice2" name = "choice2">
+<label for="choice1">{{ question.choice_2 }}</label>
+<input type="radio" id = "choice3" name = "choice3">
+<label for="choice1">{{ question.choice_3 }}</label>
+<input type="radio" id = "choice4" name = "choice4">
+<label for="choice1">{{ question.choice_4 }}</label>
+</div>
+</form>
